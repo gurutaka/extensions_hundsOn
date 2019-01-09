@@ -1,0 +1,16 @@
+{
+  "name": "【導入】content_scripts",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "BaclkgroundColor"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["content_scripts.css"],
+      "js": ["jquery.min.js", "content_scripts.js"]
+    }
+  ]
+}
